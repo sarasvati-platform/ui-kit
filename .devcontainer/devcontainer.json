@@ -1,0 +1,16 @@
+{
+  "name": "Sarasvati UI Kit",
+  "dockerFile": "Dockerfile",
+  "postCreateCommand": ".devcontainer/bootstrap.sh",
+  "extensions": [
+    "Vue.volar",
+    "streetsidesoftware.code-spell-checker",
+    "stackbreak.comment-divider",
+    "dbaeumer.vscode-eslint",
+    "GitHub.vscode-pull-request-github",
+    "eamodio.gitlens",
+    "eg2.vscode-npm-script",
+    "howardzuo.vscode-npm-dependency",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

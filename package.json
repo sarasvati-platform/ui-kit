@@ -1,0 +1,39 @@
+{
+  "name": "@sarasvati-platform/ui-kit",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/sarasvati-ui-kit.umd.js",
+  "module": "./dist/sarasvati-ui-kit.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/sarasvati-ui-kit.es.js",
+      "require": "./dist/sarasvati-ui-kit.umd.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.18.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.12",
+    "vue": "^3.2.37",
+    "vue-loader": "^16.8.3",
+    "vue-tsc": "^0.38.1"
+  }
+}
